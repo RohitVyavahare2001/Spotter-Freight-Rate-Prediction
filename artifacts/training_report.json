@@ -1,0 +1,42 @@
+{
+  "n_training_rows": 48000,
+  "validation_fraction": 0.2,
+  "temporal_cutoff": "2025-08-31",
+  "holdout_metrics": {
+    "mae": 133.58449510918493,
+    "mape": 0.057121728818787354,
+    "rmse": 641.4822199313443,
+    "r2": 0.8233025140536305,
+    "best_iteration": 172
+  },
+  "feature_importance": {
+    "distance": 1549,
+    "lane": 1440,
+    "quote_signal": 1379,
+    "weight": 1182,
+    "equipment": 889,
+    "day_index": 884,
+    "market_index": 795,
+    "haversine_miles": 686,
+    "weight_per_mile": 593,
+    "circuity": 577,
+    "month_cos": 268,
+    "dow_sin": 190,
+    "dow_cos": 147,
+    "month_sin": 85
+  },
+  "lgb_params": {
+    "objective": "regression_l2",
+    "learning_rate": 0.03,
+    "num_leaves": 63,
+    "min_child_samples": 40,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 1.0,
+    "n_estimators": 3000,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": -1
+  }
+}
